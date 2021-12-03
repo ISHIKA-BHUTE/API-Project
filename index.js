@@ -136,10 +136,10 @@ Parameter       NONE
 Methods         POST
 */
 
-booky.post("/book/new", (req,res)=> {
-  const newBook = req.body;
-  database.books.push(newBook);
-  return res.json({updatedBooks: database.books});
+booky.post("/book/new",async  (req,res)=> {
+  const { newBook } = req.body;
+  const addNewBook = BookModel.create(newBook)
+  return res.json({books: addNewBook, message:"Book was added"});
 });
 
 //ADD NEW AUTHORS
@@ -151,10 +151,10 @@ Parameter       NONE
 Methods         POST
 */
 
-booky.post("/author/new", (req,res)=> {
-  const newAuthor = req.body;
-  database.author.push(newAuthor);
-  return res.json({updatedAuthors: database.author});
+booky.post("/author/new",async (req,res)=> {
+  const { newAuthor } = req.body;
+ AuthorModel.create(newAuthor);
+  return res.json({authors: database.authors, message:"Author was added"});
 });
 
 //ADD NEW AUTHORS
