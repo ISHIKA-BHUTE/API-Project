@@ -1,9 +1,9 @@
-//Requirements for our project
+//Requirement for our project
 
-//Book management company
+//We are a book management company
 
 //BOOKS
-//ISBN, title, pub date, language, num page, author[], publication[], category[]
+//ISBN, title, pub date, language, num page, author[], category[]
 
 //AUTHORS
 //id, name, books[]
@@ -11,33 +11,45 @@
 //PUBLICATIONS
 //id, name, books[]
 
-//What are the APIs we need?
+//We have to design and code an API over this .
 
-//BOOKS
-//WE NEED AN API FOR
-//-> to get all books - DONE
-//-> to get specific book - DONE
-//-> to get a list of books based on category - DONE
-//-> to get a list of books based on languages - ASSIGNMENT
+//1. BOOKS
+//We need an API :-
+//To get all the books - DONE
+//To get specific book - DONE
+//To get a list of books based on category - DONE
+//To get a list of books based on languages - UR TASK
 
-//AUTHORS
-//WE NEED AN API FOR
-//-> to get all authors - DONE
-//-> to get specific author - DONE
-//-> to get a list of authors based on books - ASSIGNMENT
+//2. AUTHORS
+//We need an API :-
+//To get all the authors - DONE
+//To get a specific author based on id- YOUR  TASK
+//To get a list of authors based on books - DONE
 
-//PUBLICATIONS
-//WE NEED AN API FOR
-//-> to get all publications - DONE
-//-> to get specific publication - ASSIGNMENT
-//-> to get a list of publications based on book - ASSIGNMENT
+//3. PUBLICATIONS
+//We need an API :-
+//To get all the publications
+//To get a specific publication - YOUR  TASK
+//To get a list of publications based on a book - YOUR TASK
+
+
 
 //POST REQUEST
-//-> Add new books - DONE
-//-> Add new authors - DONE
-//-> Add new publications - DONE
+//1. ADD NEW BOOK - DONE
+//2.ADD NEW PUBLICATION -
+//3.ADD NEW AUTHOR
 
-//PUT REQUEST
+/**********PUT***********/
+//Update book details if author is changed. - DONE
 
+/*****DELETE****/
+//1. Delete a book - DONE
+//2. Delete author from book - UR TASK
+//3. Delete author from book and related book from author -
 
-//DELETE REQUEST
+//Schema - Blueprint of how data has to be constructed
+//MongoDB is schemaless
+//mongoose has schema
+//mongoose - validation , relationship with other data.
+//model -> document model of MongoDB
+//Schema -> Model -> use them .
